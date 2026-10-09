@@ -1,5 +1,10 @@
 import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import AppWrapper from "./context/AppWrapper";
+import NavSidebar from "@/components/NavSidebar";
+import LenisWrapper from "@/components/LenisWrapper";
+import Footer from "@/components/Footer";
 
 
 const outfit = Outfit({
@@ -26,7 +31,16 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${outfit.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <LenisWrapper>
+          <AppWrapper>
+            <Header />
+            <NavSidebar />
+            {children}
+            <Footer />
+          </AppWrapper>
+        </LenisWrapper>
+      </body>
     </html>
   );
 }
