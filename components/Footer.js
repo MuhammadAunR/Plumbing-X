@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className='border-t border-dark/30'>
             <Container>
-                <section className='py-20 grid md:grid-cols-2 lg:grid-cols-3 gap-y-15 gap-x-7 lg:justify-items-center'>
+                <section className='py-10 lg:py-20 grid md:grid-cols-2 lg:grid-cols-3 gap-y-15 gap-x-7 lg:justify-items-center'>
 
                     <div className='flex flex-col items-start gap-7'>
                         <Link
