@@ -10,13 +10,13 @@ const ProblemFixSection = () => {
     return (
         <div className='bg-hover text-light'>
             <Container>
-                <section className='py-20 flex items-center justify-center gap-10 max-lg:flex-col'>
+                <section className='pt-10 flex items-center justify-center gap-10 max-lg:flex-col-reverse'>
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.90, delay: 0.1 }}
                         viewport={{ once: true }}
-                        className='relative w-full h-100 md:w-130 md:h-130 rounded-xl overflow-hidden'>
+                        className='relative w-full h-100 md:w-130 md:h-130'>
                         <Image
                             src={'/problem-fix-sec.png'}
                             alt='Eng'
